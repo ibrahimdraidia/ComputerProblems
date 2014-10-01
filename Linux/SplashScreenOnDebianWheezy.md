@@ -1,4 +1,4 @@
-Spalsh Screen On Debian Wheezy
+Splash Screen On Debian Wheezy
 ==============================
 
 
