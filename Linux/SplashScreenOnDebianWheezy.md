@@ -23,7 +23,7 @@ i915 modeset=1
 
 ### Nouveau (nVidia)
 > drm
-nouveau modeset=1
+> nouveau modeset=1
 
 
 ### ATI
