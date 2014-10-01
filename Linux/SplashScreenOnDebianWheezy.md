@@ -18,21 +18,17 @@ Edit the file **/etc/initramfs-tools/modules** using your favorite text editor a
 
 ### Intel
 > intel_agp
-
-  drm
-
-  i915 modeset=1
+drm
+i915 modeset=1
 
 ### Nouveau (nVidia)
 > drm
-
-  nouveau modeset=1
+nouveau modeset=1
 
 
 ### ATI
 >  drm
-
-   radeon modeset=1
+radeon modeset=1
 
 
 ##step b
