@@ -12,26 +12,26 @@ sudo aptitude install plymouth-drm
 
 #Step 2: Configure
 
-##step a
+##Step a:
 
 Edit the file **/etc/initramfs-tools/modules** using your favorite text editor and add the modesetting for what best fits you:
 
 ### Intel
-> intel_agp
-drm
-i915 modeset=1
+> intel_agp<br/>
+drm<br/>
+i915 modeset=1<br/>
 
 ### Nouveau (nVidia)
-> drm
-> nouveau modeset=1
+> drm<br/>
+nouveau modeset=1<br/>
 
 
 ### ATI
->  drm
-radeon modeset=1
+>  drm<br/>
+radeon modeset=1<br/>
 
 
-##step b
+##Step b:
 
 Now we have to configure Grub2 for whatever resolution best fits your needs.
 
@@ -46,7 +46,7 @@ You will also need to change this line
 
 > GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
-##step c and the final one of the step 2
+##step c:
 
 Update grub by taping this commmand:
 
@@ -70,4 +70,4 @@ Now you have to save the change and to do that you have just to run this command
 
 ##Step 4: Reboot
 
-You must reboot your computer for the changes to take effect
+You must reboot your computer for the changes take effect
