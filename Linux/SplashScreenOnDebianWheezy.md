@@ -14,20 +14,20 @@ sudo aptitude install plymouth-drm
 
 ##step a
 
-Edit the file *** /etc/initramfs-tools/modules *** using your favorite text editor and add the modesetting for what best fits you:
+Edit the file **/etc/initramfs-tools/modules** using your favorite text editor and add the modesetting for what best fits you:
 
 ### Intel
-> intel_agp
-  drm
-  i915 modeset=1
+> intel_agp.
+  drm.
+  i915 modeset=1.
 
 ### Nouveau (nVidia)
-> drm
-  nouveau modeset=1
+> drm.
+  nouveau modeset=1.
 
 ### ATI
->  drm
-   radeon modeset=1
+>  drm.
+   radeon modeset=1.
 
 
 ##step b
@@ -36,8 +36,13 @@ Now we have to configure Grub2 for whatever resolution best fits your needs.
 
 > vim /etc/default/grub
 
-You will also need to change this line > GRUB_CMDLINE_LINUX_DEFAULT="quiet" 
-to
+You will also need to change this line
+
+
+> GRUB_CMDLINE_LINUX_DEFAULT="quiet"
+
+ to
+
 > GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
 ##step c and the final one of the step 2
@@ -56,7 +61,7 @@ To set a theme run this:
 
 > sudo /usr/sbin/plymouth-set-default-theme spacefun
 
-note that *** spacefun *** here one of the themes installed
+note that **spacefun** here one of the themes installed
 
 Now you have to save the change and to do that you have just to run this command:
 
